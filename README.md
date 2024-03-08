@@ -7,7 +7,7 @@
   
   `python3 download.py -p com.example.android`    
 ## autoAPK is bash script to automate android pentesting on mass level
-- To automate pentest on APK files, put them in a single directory and use below command. [In below example Apkfiles/ is directory having all APK files in it]
+- To automate pentest on APK files, put them in a single directory and use below command. [In below example Apkfiles/ is directory path having all APK files in it]
   
   `./autoAPK -d Apkfiles/`
   
