@@ -47,6 +47,6 @@ for apkfile in "$main_directory"/*.apk; do
         nuclei -t mobileTemplates/ -o "$foldername"_nuclei < <(echo "$foldername")
 
         # Step 3: Running apkleaks on APK files
-        python3 ~/tools/apkleaks.py -f "$apkfile" -o "${filename%.*}"_apkleaks
+        python3 ~/tools/apkleaks/apkleaks.py -f "$apkfile" -o "${filename%.*}"_apkleaks
     fi
 done
