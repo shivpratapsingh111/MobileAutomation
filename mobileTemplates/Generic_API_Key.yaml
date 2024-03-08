@@ -1,0 +1,15 @@
+id: Generic_API_Key
+
+info:
+  name: Generic_API_Key
+  author: Shiv
+  severity: medium
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "[a|A][p|P][i|I][_]?[k|K][e|E][y|Y].*['|"][0-9a-zA-Z]{32,45}['|"]"

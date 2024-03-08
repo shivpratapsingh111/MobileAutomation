@@ -1,0 +1,15 @@
+id: Amazon_AWS_Access_Key_ID
+
+info:
+  name: Amazon_AWS_Access_Key_ID
+  author: Shiv
+  severity: medium
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "([^A-Z0-9]|^)(AKIA|A3T|AGPA|AIDA|AROA|AIPA|ANPA|ANVA|ASIA)[A-Z0-9]{12,}"

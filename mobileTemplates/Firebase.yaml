@@ -1,0 +1,15 @@
+id: Firebase
+
+info:
+  name: Firebase
+  author: Shiv
+  severity: medium
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "[a-z0-9.-]+\\.firebaseio\\.com"

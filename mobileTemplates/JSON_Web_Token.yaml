@@ -1,0 +1,15 @@
+id: JSON_Web_Token
+
+info:
+  name: JSON_Web_Token
+  author: Shiv
+  severity: medium
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "(?i)^((?=.*[a-z])(?=.*[0-9])(?:[a-z0-9_=]+\\.){2}(?:[a-z0-9_\\-\\+/=]*))$"

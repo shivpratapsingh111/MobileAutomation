@@ -1,0 +1,15 @@
+id: Artifactory_API_Token
+
+info:
+  name: Artifactory_API_Token
+  author: Shiv
+  severity: medium
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "(?:\\s|=|:|"|^)AKC[a-zA-Z0-9]{10,}"

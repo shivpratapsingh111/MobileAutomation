@@ -1,0 +1,15 @@
+id: HackerOne_CTF_Flag
+
+info:
+  name: HackerOne_CTF_Flag
+  author: Shiv
+  severity: medium
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "[h|H]1(?:[c|C][t|T][f|F])?\\{.*\\}"

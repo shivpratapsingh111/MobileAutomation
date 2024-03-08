@@ -1,0 +1,15 @@
+id: Twitter_OAuth
+
+info:
+  name: Twitter_OAuth
+  author: Shiv
+  severity: medium
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "[t|T][w|W][i|I][t|T][t|T][e|E][r|R].*['|"][0-9a-zA-Z]{35,44}['|"]"

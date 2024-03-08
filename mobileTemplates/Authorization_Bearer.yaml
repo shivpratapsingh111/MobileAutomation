@@ -1,0 +1,15 @@
+id: Authorization_Bearer
+
+info:
+  name: Authorization_Bearer
+  author: Shiv
+  severity: medium
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "bearer\\s[a-zA-Z0-9_\\-:\\.=]+"

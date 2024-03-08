@@ -1,0 +1,15 @@
+id: PayPal_Braintree_Access_Token
+
+info:
+  name: PayPal_Braintree_Access_Token
+  author: Shiv
+  severity: medium
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "access_token\\$production\\$[0-9a-z]{16}\\$[0-9a-f]{32}"

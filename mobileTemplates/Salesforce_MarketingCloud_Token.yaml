@@ -1,0 +1,15 @@
+id: Salesforce_MarketingCloud_Token
+
+info:
+  name: Salesforce_MarketingCloud_Token
+  author: Shiv
+  severity: medium
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "setAccessToken\\(\\w+.MC_ACCESS_TOKEN\\)"

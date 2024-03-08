@@ -1,0 +1,15 @@
+id: Facebook_ClientID
+
+info:
+  name: Facebook_ClientID
+  author: Shiv
+  severity: medium
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "[f|F][a|A][c|C][e|E][b|B][o|O][o|O][k|K](.{0,20})?['"][0-9]{13,17}"

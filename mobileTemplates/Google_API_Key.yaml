@@ -1,0 +1,15 @@
+id: Google_API_Key
+
+info:
+  name: Google_API_Key
+  author: Shiv
+  severity: low
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "AIza[0-9A-Za-z\\-_]{35}"

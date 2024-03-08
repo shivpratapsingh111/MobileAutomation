@@ -1,0 +1,15 @@
+id: Authorization_Basic
+
+info:
+  name: Authorization_Basic
+  author: Shiv
+  severity: low
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "basic\\s[a-zA-Z0-9_\\-:\\.=]+"

@@ -1,0 +1,15 @@
+id: MailChimp_API_Key
+
+info:
+  name: MailChimp_API_Key
+  author: Shiv
+  severity: medium
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "[0-9a-f]{32}-us[0-9]{1,2}"

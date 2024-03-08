@@ -1,0 +1,15 @@
+id: Facebook_OAuth
+
+info:
+  name: Facebook_OAuth
+  author: Shiv
+  severity: medium
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "[f|F][a|A][c|C][e|E][b|B][o|O][o|O][k|K].*['|"][0-9a-f]{32}['|"]"

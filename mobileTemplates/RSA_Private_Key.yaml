@@ -1,0 +1,15 @@
+id: RSA_Private_Key
+
+info:
+  name: RSA_Private_Key
+  author: Shiv
+  severity: medium
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "-----BEGIN RSA PRIVATE KEY-----"

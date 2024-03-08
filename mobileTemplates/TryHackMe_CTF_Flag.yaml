@@ -1,0 +1,15 @@
+id: TryHackMe_CTF_Flag
+
+info:
+  name: TryHackMe_CTF_Flag
+  author: Shiv
+  severity: medium
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "[t|T](?:[r|R][y|Y][h|H][a|A][c|C][k|K][m|M][e|E]|[h|H][m|M])\\{.*\\}$"

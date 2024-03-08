@@ -1,0 +1,15 @@
+id: Adjust_Config
+
+info:
+  name: Adjust_Config
+  author: Shiv
+  severity: medium
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "AdjustConfig\\(["|']?[\\w]+["|']?,\\s?["|']?[\\w]+["|']?(,\\s?["|']?[\\w]+["|']?)?\\)([a|A]djust)?[C|c]onfig\\.setAppSecret\\(.*\\)"

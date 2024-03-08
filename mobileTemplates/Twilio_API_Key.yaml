@@ -1,0 +1,15 @@
+id: Twilio_API_Key
+
+info:
+  name: Twilio_API_Key
+  author: Shiv
+  severity: medium
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "SK[0-9a-fA-F]{32}"

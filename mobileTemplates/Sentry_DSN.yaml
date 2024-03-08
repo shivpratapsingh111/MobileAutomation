@@ -1,0 +1,15 @@
+id: Sentry_DSN
+
+info:
+  name: Sentry_DSN
+  author: Shiv
+  severity: medium
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "https?://(\\w+)(:\\w+)?@sentry\\.io/[0-9]+"

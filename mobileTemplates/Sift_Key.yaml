@@ -1,0 +1,15 @@
+id: Sift_Key
+
+info:
+  name: Sift_Key
+  author: Shiv
+  severity: medium
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "\\.with(?:AccountId|BeaconKey)\\(["|'].*["|']\\)"

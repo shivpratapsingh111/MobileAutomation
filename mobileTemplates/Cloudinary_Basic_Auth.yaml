@@ -1,0 +1,15 @@
+id: Cloudinary_Basic_Auth
+
+info:
+  name: Cloudinary_Basic_Auth
+  author: Shiv
+  severity: medium
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "cloudinary://[0-9]{15}:[0-9A-Za-z]+@[a-z]+"

@@ -44,7 +44,7 @@ for apkfile in "$main_directory"/*.apk; do
         apktool d "$apkfile"
 
         # Step 2: Running nuclei on decompiled folders
-        nuclei -t ~/AndroidPentesting/mobileTemplates -o "$foldername"_nuclei < <(echo "$foldername")
+        nuclei -t mobileTemplates/ -o "$foldername"_nuclei < <(echo "$foldername")
 
         # Step 3: Running apkleaks on APK files
         python3 ~/tools/apkleaks.py -f "$apkfile" -o "${filename%.*}"_apkleaks

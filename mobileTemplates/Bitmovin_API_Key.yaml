@@ -1,0 +1,15 @@
+id: Bitmovin_API_Key
+
+info:
+  name: Bitmovin_API_Key
+  author: Shiv
+  severity: medium
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "BITMOVIN_API_KEY\\s?=\\s?['|"]?.*['|"]?"

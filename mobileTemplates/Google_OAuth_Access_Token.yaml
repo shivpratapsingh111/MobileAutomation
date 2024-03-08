@@ -1,0 +1,15 @@
+id: Google_OAuth_Access_Token
+
+info:
+  name: Google_OAuth_Access_Token
+  author: Shiv
+  severity: medium
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "ya29\\.[0-9A-Za-z\\-_]+"

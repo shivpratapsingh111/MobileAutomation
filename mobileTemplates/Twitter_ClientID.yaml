@@ -1,0 +1,15 @@
+id: Twitter_ClientID
+
+info:
+  name: Twitter_ClientID
+  author: Shiv
+  severity: medium
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "[t|T][w|W][i|I][t|T][t|T][e|E][r|R](.{0,20})?['"][0-9a-z]{18,25}"

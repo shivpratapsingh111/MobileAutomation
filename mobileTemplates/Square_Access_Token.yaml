@@ -1,0 +1,15 @@
+id: Square_Access_Token
+
+info:
+  name: Square_Access_Token
+  author: Shiv
+  severity: medium
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "sq0atp-[0-9A-Za-z\\-_]{22}"

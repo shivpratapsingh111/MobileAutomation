@@ -1,0 +1,15 @@
+id: Picatic_API_Key
+
+info:
+  name: Picatic_API_Key
+  author: Shiv
+  severity: medium
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "sk_live_[0-9a-z]{32}"

@@ -1,0 +1,15 @@
+id: Intercom_API_Key
+
+info:
+  name: Intercom_API_Key
+  author: Shiv
+  severity: medium
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "Intercom\\.initialize\\(["|']?\\w+["|']?,\\s?["|']?\\w+["|']?,\\s?["|']?\\w+["|']?\\)"

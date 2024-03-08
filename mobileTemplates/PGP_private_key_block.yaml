@@ -1,0 +1,15 @@
+id: PGP_private_key_block
+
+info:
+  name: PGP_private_key_block
+  author: Shiv
+  severity: medium
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "-----BEGIN PGP PRIVATE KEY BLOCK-----"

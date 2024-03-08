@@ -1,0 +1,15 @@
+id: Google_Cloud_Platform_OAuth
+
+info:
+  name: Google_Cloud_Platform_OAuth
+  author: Shiv
+  severity: low
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "[0-9]+-[0-9A-Za-z_]{32}\\.apps\\.googleusercontent\\.com"

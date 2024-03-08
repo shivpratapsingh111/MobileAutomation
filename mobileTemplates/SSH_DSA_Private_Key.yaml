@@ -1,0 +1,15 @@
+id: SSH_DSA_Private_Key
+
+info:
+  name: SSH_DSA_Private_Key
+  author: Shiv
+  severity: medium
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "-----BEGIN DSA PRIVATE KEY-----"

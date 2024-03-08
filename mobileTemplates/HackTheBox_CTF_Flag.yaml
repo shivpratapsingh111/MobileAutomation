@@ -1,0 +1,15 @@
+id: HackTheBox_CTF_Flag
+
+info:
+  name: HackTheBox_CTF_Flag
+  author: Shiv
+  severity: medium
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "[h|H](?:[a|A][c|C][k|K][t|T][h|H][e|E][b|B][o|O][x|X]|[t|T][b|B])\\{.*\\}$"

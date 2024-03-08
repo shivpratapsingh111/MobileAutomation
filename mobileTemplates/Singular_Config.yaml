@@ -1,0 +1,15 @@
+id: Singular_Config
+
+info:
+  name: Singular_Config
+  author: Shiv
+  severity: medium
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "SingularConfig\\(["|']?[\\w._]+["|']?,\\s?["|']?[\\w._]+["|']?\\)"

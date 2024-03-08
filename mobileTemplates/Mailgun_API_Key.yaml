@@ -1,0 +1,15 @@
+id: Mailgun_API_Key
+
+info:
+  name: Mailgun_API_Key
+  author: Shiv
+  severity: medium
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "key-[0-9a-zA-Z]{32}"
