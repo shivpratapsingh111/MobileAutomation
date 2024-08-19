@@ -1,0 +1,15 @@
+id: Exported_Content_Providers
+
+info:
+  name: Exported_Content_Providers
+  author: Shiv
+  severity: info
+
+file:
+  - extensions:
+      - xml
+
+    extractors:
+      - type: regex
+        regex:
+          - "<provider.*android:exported=\"true\".*/>"

@@ -1,0 +1,15 @@
+id: TaskAffinity
+
+info:
+  name: TaskAffinity
+  author: Shiv
+  severity: medium
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "android:taskAffinity=\"\""

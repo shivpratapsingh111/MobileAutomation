@@ -1,6 +1,10 @@
 #!/bin/bash
 
+<<<<<<< HEAD
 dir=$1
+=======
+currentDir=$(dirname "$0")
+>>>>>>> 9d0df64 (Updated)
 
 # Function to display usage information
 usage() {
@@ -12,6 +16,7 @@ usage() {
 if [ $# -eq 0 ]; then
     usage
 fi
+
 
 
 # Step 1: Decompiling APKs in the main folder
@@ -42,5 +47,10 @@ for apkfile in "$dir"/*.apk; do
 
         wait
 
+<<<<<<< HEAD
+=======
+        # Step 3: Running apkleaks on APK files
+        python3 ~/tools/apkleaks/apkleaks.py -f "$apkfile" -o "${filename%.*}"_apkleaks
+>>>>>>> 9d0df64 (Updated)
     fi
 done

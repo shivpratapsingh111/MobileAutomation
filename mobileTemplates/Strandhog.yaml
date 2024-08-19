@@ -1,0 +1,15 @@
+id: Strandhog
+
+info:
+  name: Strandhog
+  author: Shiv
+  severity: medium
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "singleTask"

@@ -1,0 +1,15 @@
+id: Exported_Content_Providers
+
+info:
+  name: Exported_Content_Providers
+  author: Shiv
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "AdjustConfig\\(["|']?[\\w]+["|']?,\\s?["|']?[\\w]+["|']?(,\\s?["|']?[\\w]+["|']?)?\\)([a|A]djust)?[C|c]onfig\\.setAppSecret\\(.*\\)"
